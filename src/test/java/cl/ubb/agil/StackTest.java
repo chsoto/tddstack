@@ -33,5 +33,11 @@ public class StackTest {
 		st.ingresar(2);
 		assertEquals(2,st.tamano());
 	}
+	@Test
+	public void AgrgarNumeroUnoStackPopDevuelveUno() {
+		st.ingresar(1);
+		st.sacar(1);
+		assertEquals(1,st.elementoSacado());
+	}
 
 }
