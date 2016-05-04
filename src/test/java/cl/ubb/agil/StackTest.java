@@ -20,5 +20,13 @@ public class StackTest {
 		boolean valor=st.isEmpty();
 		assertEquals(false,valor);
 	}
+	@Test
+	public void AgrgarNumeroUnoyDosStackNoEstaVacia() {
+		StackTdd st= new StackTdd();
+		st.ingresar(1);
+		st.ingresar(2);
+		boolean valor=st.isEmpty();
+		assertEquals(false,valor);
+	}
 
 }
