@@ -2,7 +2,6 @@ package cl.ubb.agil;
 
 import static org.junit.Assert.*;
 
-import java.util.Stack;
 
 import org.junit.Test;
 
@@ -13,6 +12,13 @@ public class StackTest {
 		StackTdd st= new StackTdd();
 		boolean valor=st.isEmpty();
 		assertEquals(true,valor);
+	}
+	@Test
+	public void AgrgarNumeroUnoStackNoEstaVacia() {
+		StackTdd st= new StackTdd();
+		st.ingresar(1);
+		boolean valor=st.isEmpty();
+		assertEquals(false,valor);
 	}
 
 }
